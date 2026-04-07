@@ -1,0 +1,366 @@
+[
+  {
+    "source_file": "raw/arxiv_1712_03781.md",
+    "topics": [
+      {"name": "Nested Sparse Networks", "relevance": "primary"},
+      {"name": "Model Compression", "relevance": "primary"},
+      {"name": "Knowledge Distillation", "relevance": "secondary"},
+      {"name": "Neural Network Pruning", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Eunwoo Kim", "type": "person"},
+      {"name": "Chanho Ahn", "type": "person"},
+      {"name": "Songhwai Oh", "type": "person"},
+      {"name": "NestedNet", "type": "tool"},
+      {"name": "Nested Sparse Network", "type": "concept"},
+      {"name": "Adaptive Deep Compression", "type": "concept"},
+      {"name": "Knowledge Distillation", "type": "concept"}
+    ],
+    "summary": "This 2017 paper by Kim et al. proposes NestedNet, a deep learning framework that uses an n-in-1 nested structure within neural networks to create resource-aware architectures. The nested sparse network contains multiple levels of sub-networks with different sparsity ratios, where higher-level networks share parameters with lower-level ones. This allows a single network to serve devices with different computational resources and supports multiple tasks including adaptive compression, knowledge distillation, and coarse-to-fine hierarchical classification.",
+    "suggested_titles": [
+      "NestedNet: Nested Sparse Structures in Deep Neural Networks",
+      "Nested Learning (Predecessors and Related Work)",
+      "Model Compression Techniques",
+      "Resource-Aware Neural Network Architectures"
+    ],
+    "suggested_categories": ["research", "technology"],
+    "key_claims": [
+      "NestedNet uses an n-in-1-type nested structure where multiple sub-networks with different sparsity ratios coexist in a single network",
+      "Higher level networks share parameters with lower level networks to enable stable nested learning",
+      "A single nested sparse network can meet diverse resource requirements across different devices",
+      "The framework supports adaptive deep compression, knowledge distillation, and learning class hierarchy tasks",
+      "The paper proposes weight connection learning and channel/layer scheduling strategies for training",
+      "Published as arXiv:1712.03781 (2017), this is an earlier use of 'nested' in a neural network context, distinct from the 2025 Nested Learning paradigm"
+    ]
+  },
+  {
+    "source_file": "raw/arxiv_2511_14823.md",
+    "topics": [
+      {"name": "Dynamic Nested Hierarchies", "relevance": "primary"},
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Continual Learning", "relevance": "primary"},
+      {"name": "Lifelong Learning", "relevance": "secondary"},
+      {"name": "Neuroplasticity", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Akbar Anbar Jafari", "type": "person"},
+      {"name": "Cagri Ozcinar", "type": "person"},
+      {"name": "Gholamreza Anbarjafari", "type": "person"},
+      {"name": "Dynamic Nested Hierarchies", "type": "concept"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "Anterograde Amnesia (in LLMs)", "type": "concept"}
+    ],
+    "summary": "This paper by Anbar Jafari et al. proposes Dynamic Nested Hierarchies as an extension of the nested learning paradigm. It enables models to autonomously adjust the number of optimization levels, their nesting structures, and update frequencies during training or inference, inspired by neuroplasticity. The work provides mathematical proofs of convergence, expressivity bounds, and sublinear regret, with empirical results in language modeling, continual learning, and long-context reasoning.",
+    "suggested_titles": [
+      "Dynamic Nested Hierarchies",
+      "Nested Learning",
+      "Continual Learning in Neural Networks",
+      "Neuroplasticity-Inspired AI Architectures"
+    ],
+    "suggested_categories": ["research", "technology", "ideas"],
+    "key_claims": [
+      "Dynamic Nested Hierarchies extend the nested learning paradigm by allowing models to autonomously adjust optimization levels and nesting structures",
+      "The approach is inspired by neuroplasticity to enable self-evolution without predefined constraints",
+      "The paper provides mathematical proofs of convergence and expressivity bounds",
+      "Achieves sublinear regret in varying regimes",
+      "Addresses anterograde amnesia in existing models by dynamically compressing context flows",
+      "Demonstrates superior performance in language modeling, continual learning, and long-context reasoning"
+    ]
+  },
+  {
+    "source_file": "raw/arxiv_2512_24695.md",
+    "topics": [
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Continual Learning", "relevance": "primary"},
+      {"name": "Associative Memory", "relevance": "primary"},
+      {"name": "In-Context Learning", "relevance": "secondary"},
+      {"name": "Self-Modifying Networks", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Ali Behrouz", "type": "person"},
+      {"name": "Meisam Razaviyayn", "type": "person"},
+      {"name": "Peilin Zhong", "type": "person"},
+      {"name": "Vahab Mirrokni", "type": "person"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "Hope", "type": "tool"},
+      {"name": "Continuum Memory System", "type": "concept"},
+      {"name": "Google Research", "type": "organization"},
+      {"name": "NeurIPS 2025", "type": "event"},
+      {"name": "Adam optimizer", "type": "tool"},
+      {"name": "SGD with Momentum", "type": "tool"}
+    ],
+    "summary": "This is the foundational Nested Learning (NL) paper by Behrouz et al. from Google Research, published at NeurIPS 2025. It introduces a paradigm that represents ML models as nested, multi-level optimization problems each with its own context flow. The paper makes three contributions: (1) showing that gradient-based optimizers like Adam are associative memory modules that compress gradients, (2) a self-modifying learning module that learns its own update algorithm, and (3) a Continuum Memory System generalizing long/short-term memory. These are combined into the Hope architecture, which shows promising results in language modeling, continual learning, and long-context reasoning.",
+    "suggested_titles": [
+      "Nested Learning",
+      "Hope Architecture",
+      "Continuum Memory System",
+      "Associative Memory in Deep Learning",
+      "Optimizers as Memory Modules"
+    ],
+    "suggested_categories": ["research", "technology", "ideas"],
+    "key_claims": [
+      "Nested Learning represents ML models as nested, multi-level, and/or parallel optimization problems each with its own context flow",
+      "Existing deep learning methods learn by compressing their own context flow",
+      "In-context learning naturally emerges in large models through the NL lens",
+      "Standard optimizers like Adam and SGD with Momentum are associative memory modules that compress gradient information",
+      "The paper presents more expressive optimizers with deep memory and more powerful learning rules",
+      "Hope is a self-modifying sequence model that learns its own update algorithm",
+      "The Continuum Memory System generalizes the traditional long/short-term memory viewpoint",
+      "Hope shows promising results in language modeling, knowledge incorporation, few-shot generalization, continual learning, and long-context reasoning",
+      "Published at NeurIPS 2025 (arXiv:2512.24695)"
+    ]
+  },
+  {
+    "source_file": "raw/arxiviq_substack_com_p_nested-learning-the-illusion-of-deep.md",
+    "topics": [
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Deep Optimizers", "relevance": "primary"},
+      {"name": "Continuum Memory System", "relevance": "primary"},
+      {"name": "Hope Architecture", "relevance": "primary"},
+      {"name": "Titans Architecture", "relevance": "secondary"},
+      {"name": "Continual Learning", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Ali Behrouz", "type": "person"},
+      {"name": "Meisam Razaviyayn", "type": "person"},
+      {"name": "Peilin Zhong", "type": "person"},
+      {"name": "Vahab Mirrokni", "type": "person"},
+      {"name": "Vitaly Vanchurin", "type": "person"},
+      {"name": "ArXivIQ", "type": "media"},
+      {"name": "Google Research", "type": "organization"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "Deep Momentum Gradient Descent (DMGD)", "type": "concept"},
+      {"name": "Continuum Memory System (CMS)", "type": "concept"},
+      {"name": "HOPE", "type": "tool"},
+      {"name": "Titans", "type": "tool"},
+      {"name": "Transformers", "type": "concept"}
+    ],
+    "summary": "This ArXivIQ Substack post provides a detailed analysis of the Nested Learning paper by Behrouz et al. It explains the three core contributions: Deep Optimizers that reinterpret momentum as learnable memory modules, the Continuum Memory System that generalizes memory into a spectrum of update frequencies, and HOPE as a self-modifying architecture. The post frames Nested Learning as a transition from heuristic architecture stacking to explicit engineering of multi-timescale memory systems, and connects it to Vanchurin's work on evolution as multilevel learning.",
+    "suggested_titles": [
+      "Nested Learning",
+      "Deep Momentum Gradient Descent",
+      "Continuum Memory System",
+      "Hope Architecture",
+      "Titans Architecture"
+    ],
+    "suggested_categories": ["research", "media", "technology"],
+    "key_claims": [
+      "Nested Learning provides a mathematical blueprint for designing models capable of continual learning and self-improvement",
+      "Deep Momentum Gradient Descent (DMGD) replaces linear momentum with an MLP, making the optimizer itself a deep learning model",
+      "The Continuum Memory System is a chain of MLP blocks each operating at a different frequency",
+      "A standard Transformer block is a special case of CMS where there is only one memory frequency",
+      "HOPE is a direct evolution of the Titans architecture, moving from a single Long-Term Memory Module to a unified multi-level system",
+      "The NL framework connects to Vanchurin et al.'s work on evolution as multilevel learning",
+      "HOPE achieves state-of-the-art performance in language modeling with better long-context memory management",
+      "NL transitions AI design from heuristic architecture stacking to explicit engineering of multi-timescale memory"
+    ]
+  },
+  {
+    "source_file": "raw/continual-learning-background.md",
+    "topics": [
+      {"name": "Continual Learning", "relevance": "primary"},
+      {"name": "Catastrophic Forgetting", "relevance": "primary"},
+      {"name": "Nested Learning", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Ali Behrouz", "type": "person"},
+      {"name": "Meisam Razaviyayn", "type": "person"},
+      {"name": "Peilin Zhong", "type": "person"},
+      {"name": "Vahab Mirrokni", "type": "person"},
+      {"name": "Jurgen Schmidhuber", "type": "person"},
+      {"name": "Elastic Weight Consolidation (EWC)", "type": "concept"},
+      {"name": "Progressive Neural Networks", "type": "concept"},
+      {"name": "Experience Replay", "type": "concept"},
+      {"name": "PackNet", "type": "tool"},
+      {"name": "Google Research", "type": "organization"},
+      {"name": "USC", "type": "organization"},
+      {"name": "Continuum Memory System", "type": "concept"}
+    ],
+    "summary": "A personal background note on the problem of catastrophic forgetting in neural networks and how Nested Learning addresses it differently from traditional approaches. It surveys key methods including Elastic Weight Consolidation, Progressive Neural Networks, Experience Replay, and PackNet. The note argues that NL treats continual learning as a first-class design concern rather than an afterthought, with its Continuum Memory System naturally handling different retention periods. It also lists the key researchers in this space.",
+    "suggested_titles": [
+      "Catastrophic Forgetting",
+      "Continual Learning in Neural Networks",
+      "Nested Learning",
+      "Elastic Weight Consolidation"
+    ],
+    "suggested_categories": ["research", "ideas", "people"],
+    "key_claims": [
+      "Neural networks suffer from catastrophic forgetting when trained on new data",
+      "Elastic Weight Consolidation penalizes changes to important weights to combat forgetting",
+      "Progressive Neural Networks add new capacity per task but do not scale",
+      "Experience Replay stores and replays old examples but has memory cost",
+      "Nested Learning designs the entire model architecture around multi-timescale learning rather than treating continual learning as an afterthought",
+      "Ali Behrouz is at Google Research; Meisam Razaviyayn is at USC",
+      "Jurgen Schmidhuber pioneered self-referential learning, a precursor to NL ideas"
+    ]
+  },
+  {
+    "source_file": "raw/itcanthink_substack_com_p_paper-notes-nested-learning.md",
+    "topics": [
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Continual Learning", "relevance": "primary"},
+      {"name": "Catastrophic Forgetting", "relevance": "primary"},
+      {"name": "Associative Memory", "relevance": "primary"},
+      {"name": "Hope Architecture", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Chris Paxton", "type": "person"},
+      {"name": "Beren Millidge", "type": "person"},
+      {"name": "Google Research", "type": "organization"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "HOPE", "type": "tool"},
+      {"name": "Adam optimizer", "type": "tool"},
+      {"name": "Associative Memory", "type": "concept"},
+      {"name": "It Can Think!", "type": "media"},
+      {"name": "Titans", "type": "tool"},
+      {"name": "ChatGPT", "type": "tool"}
+    ],
+    "summary": "Chris Paxton's Substack post \"It Can Think!\" provides an accessible explanation of the Nested Learning paper through the lens of robotics and practical continual learning. He uses the example of a robot learning to pick up cups and then toys to illustrate catastrophic forgetting. The post highlights the key insight that momentum-based optimizers like Adam are themselves associative memories, and that Nested Learning frames the entire ML problem as nested optimization at different update speeds. It covers the HOPE architecture as the practical realization of these ideas.",
+    "suggested_titles": [
+      "Nested Learning",
+      "Catastrophic Forgetting",
+      "Associative Memory in Deep Learning",
+      "Hope Architecture",
+      "Continual Learning in Robotics"
+    ],
+    "suggested_categories": ["research", "media", "technology"],
+    "key_claims": [
+      "Momentum-based optimizers like Adam are a form of associative memory",
+      "Architecture is described as an 'illusion' — both optimizers and neural networks are the same thing: associative memory",
+      "Memory is defined as a neural update caused by an input; learning is the process for acquiring effective memory",
+      "Inner loops update rapidly to capture new information while outer loops update slowly for general knowledge",
+      "Current transformers 'only experience the present' with baked-in weights plus context",
+      "HOPE is a self-referential learning module with continuum memory that updates blocks at increasing frequencies",
+      "Chris Paxton frames NL as essential for robots deployed 'in the wild' that must learn on the fly",
+      "Beren Millidge's work on continual learning in human memory is cited as related reading"
+    ]
+  },
+  {
+    "source_file": "raw/research-notes.md",
+    "topics": [
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Hope Architecture", "relevance": "primary"},
+      {"name": "Optimizers as Memory", "relevance": "primary"},
+      {"name": "Meta-Learning", "relevance": "secondary"},
+      {"name": "State-Space Models", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Ali Behrouz", "type": "person"},
+      {"name": "Schmidhuber", "type": "person"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "Hope", "type": "tool"},
+      {"name": "Continuum Memory System (CMS)", "type": "concept"},
+      {"name": "Adam optimizer", "type": "tool"},
+      {"name": "SGD with Momentum", "type": "tool"},
+      {"name": "Mamba", "type": "tool"},
+      {"name": "Neural Architecture Search", "type": "concept"}
+    ],
+    "summary": "Personal research notes summarizing why Nested Learning matters as a potential paradigm shift. The author highlights the key insight that standard optimizers like Adam are associative memory modules, the Hope architecture as a self-modifying recurrent model with Continuum Memory System, and open questions about computational overhead, comparison to Mamba/state-space models, and whether NL can be applied retroactively to transformers. Connections are drawn to meta-learning, Neural Architecture Search, and Schmidhuber's self-referential learning.",
+    "suggested_titles": [
+      "Nested Learning",
+      "Hope Architecture",
+      "Optimizers as Associative Memory",
+      "Open Questions in Nested Learning"
+    ],
+    "suggested_categories": ["research", "personal", "ideas"],
+    "key_claims": [
+      "NL is potentially a paradigm shift in how we think about deep learning",
+      "NL views a neural network as a hierarchy of nested optimization problems rather than a single one",
+      "Standard optimizers like Adam and SGD with Momentum are actually associative memory modules that compress gradients",
+      "Hope learns its own update algorithm and has a Continuum Memory System",
+      "Hope can do continual learning without catastrophic forgetting",
+      "Hope scales to longer contexts than transformers",
+      "Open question: how does Hope compare to Mamba and other state-space models",
+      "NL relates to meta-learning, Neural Architecture Search, and Schmidhuber's self-referential learning from the 1990s"
+    ]
+  },
+  {
+    "source_file": "raw/research_google_blog_introducing-nested-learning-a-new-ml-paradigm-for-continual.md",
+    "topics": [
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Continual Learning", "relevance": "primary"},
+      {"name": "Hope Architecture", "relevance": "primary"},
+      {"name": "Catastrophic Forgetting", "relevance": "secondary"},
+      {"name": "Associative Memory", "relevance": "secondary"},
+      {"name": "Neuroplasticity", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Ali Behrouz", "type": "person"},
+      {"name": "Vahab Mirrokni", "type": "person"},
+      {"name": "Google Research", "type": "organization"},
+      {"name": "NeurIPS 2025", "type": "event"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "Hope", "type": "tool"},
+      {"name": "Miras", "type": "tool"},
+      {"name": "Transformers", "type": "concept"}
+    ],
+    "summary": "The official Google Research blog post introducing Nested Learning, authored by Ali Behrouz (Student Researcher) and Vahab Mirrokni (VP and Google Fellow). It frames NL as bridging the gap between model architecture and optimization, treating them as different levels of the same system. The post announces publication at NeurIPS 2025 and describes Hope as a proof-of-concept self-modifying architecture achieving superior performance in language modeling and long-context memory management.",
+    "suggested_titles": [
+      "Nested Learning",
+      "Hope Architecture",
+      "Google Research AI Projects",
+      "NeurIPS 2025 Highlights"
+    ],
+    "suggested_categories": ["research", "technology", "people"],
+    "key_claims": [
+      "Nested Learning paper published at NeurIPS 2025",
+      "Ali Behrouz is a Student Researcher at Google Research; Vahab Mirrokni is VP and Google Fellow",
+      "NL bridges the gap between model architecture and optimization algorithm, treating them as fundamentally the same concept at different levels",
+      "Backpropagation itself can be modeled as an associative memory mapping data points to local error values",
+      "Attention in transformers can be formalized as a simple associative memory module",
+      "Hope achieves superior performance in language modeling and long-context memory management compared to existing state-of-the-art models",
+      "Current LLMs suffer from anterograde amnesia — they cannot form new lasting memories after pre-training",
+      "NL provides a new previously invisible dimension for designing more capable AI"
+    ]
+  },
+  {
+    "source_file": "raw/www_marktechpost_com_2025_11_08_nested-learning-a-new-machine-learning-approach-.md",
+    "topics": [
+      {"name": "Nested Learning", "relevance": "primary"},
+      {"name": "Continual Learning", "relevance": "primary"},
+      {"name": "Hope Architecture", "relevance": "primary"},
+      {"name": "Deep Optimizers", "relevance": "secondary"},
+      {"name": "Continuum Memory System", "relevance": "secondary"},
+      {"name": "Titans Architecture", "relevance": "secondary"}
+    ],
+    "entities": [
+      {"name": "Ali Behrouz", "type": "person"},
+      {"name": "Asif Razzaq", "type": "person"},
+      {"name": "Google Research", "type": "organization"},
+      {"name": "MarkTechPost", "type": "media"},
+      {"name": "Nested Learning", "type": "concept"},
+      {"name": "HOPE", "type": "tool"},
+      {"name": "Titans", "type": "tool"},
+      {"name": "Deep Momentum Gradient Descent", "type": "concept"},
+      {"name": "Continuum Memory System (CMS)", "type": "concept"},
+      {"name": "Muon optimizer", "type": "tool"},
+      {"name": "Neural Learning Module", "type": "concept"},
+      {"name": "Transformer++", "type": "tool"},
+      {"name": "RetNet", "type": "tool"},
+      {"name": "Gated DeltaNet", "type": "tool"},
+      {"name": "TTT", "type": "tool"},
+      {"name": "Samba", "type": "tool"}
+    ],
+    "summary": "MarkTechPost's coverage of the Nested Learning paper provides detailed technical explanation of the framework and its components. It describes how NL models neural networks as nested optimization problems ordered by update frequency, formalizing backpropagation, attention, and optimizers as instances of associative memory. The article details Deep Momentum Gradient Descent (which recovers Muon as a special case), the Continuum Memory System with MLP blocks at different frequencies, and HOPE as a self-modifying variant of Titans. Benchmark results are reported at 340M, 760M, and 1.3B parameter scales.",
+    "suggested_titles": [
+      "Nested Learning",
+      "Hope Architecture",
+      "Deep Momentum Gradient Descent",
+      "Continuum Memory System",
+      "Comparison of Sequence Architectures"
+    ],
+    "suggested_categories": ["research", "media", "technology"],
+    "key_claims": [
+      "NL imposes ordering by update frequency: fast-updating parameters at inner levels, slow-updating at outer levels",
+      "Standard momentum can be written as a linear associative memory over past gradients trained with dot product similarity",
+      "Deep Momentum Gradient Descent replaces dot product similarity with L2 regression loss and uses neural memories",
+      "The Muon optimizer is recovered as a special case of Deep Momentum Gradient Descent",
+      "CMS is a chain of MLP blocks MLP(f1) through MLP(fk) where each block has its own update frequency and chunk size",
+      "A standard Transformer with one feedforward block is CMS with k=1",
+      "HOPE is built as a variant of Titans with self-modifying capability and Continuum Memory System",
+      "HOPE evaluated at 340M, 760M, and 1.3B parameter scales on Wiki and LMB perplexity plus PIQA, HellaSwag, WinoGrande, ARC, Social IQa, and BoolQ benchmarks",
+      "Baselines include Transformer++, RetNet, Gated DeltaNet, TTT, Samba, and Titans",
+      "Article published November 8, 2025 by Asif Razzaq on MarkTechPost"
+    ]
+  }
+]
