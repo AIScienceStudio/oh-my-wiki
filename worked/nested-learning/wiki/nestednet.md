@@ -44,6 +44,10 @@ NestedNet supports multiple applications including adaptive deep compression, kn
 - [[Nested Learning]] -- the 2025 paradigm that shares the "nested" name but addresses different problems
 - [[Catastrophic Forgetting and Continual Learning]] -- NestedNet's multi-task learning is tangentially related
 
+## External Links
+
+- [NestedNet: Learning Nested Sparse Structures (arXiv:1712.03781)](https://arxiv.org/abs/1712.03781) — original paper
+
 ## Sources
 
-- `raw/arxiv_1712_03781.md` -- the original NestedNet paper (Kim et al., 2017)
+- `raw/arxiv_1712_03781.md` — the original NestedNet paper (Kim et al., 2017)

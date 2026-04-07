@@ -54,11 +54,20 @@ NL imposes ordering by update frequency: fast-updating parameters sit at inner l
 - [[Titans Architecture]] -- direct predecessor to Hope, provides the foundation NL generalizes
 - [[NestedNet]] -- earlier use of "nested" in neural networks (distinct from NL)
 
+## External Links
+
+- [Nested Learning: The Illusion of Deep Learning Architectures (arXiv:2512.24695)](https://arxiv.org/abs/2512.24695) — the foundational paper
+- [Google Research Blog: Introducing Nested Learning](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/) — official announcement
+- [NeurIPS 2025 Poster](https://neurips.cc/virtual/2025/poster/116123) — conference page
+- [OpenReview](https://openreview.net/forum?id=nbMeRvNb7A) — peer review discussion
+- [ArXivIQ Analysis](https://arxiviq.substack.com/p/nested-learning-the-illusion-of-deep) — detailed technical explainer
+- [Paper Notes by Chris Paxton](https://itcanthink.substack.com/p/paper-notes-nested-learning) — accessible walkthrough
+
 ## Sources
 
-- `raw/arxiv_2512_24695.md` -- the foundational NL paper (Behrouz et al., NeurIPS 2025)
-- `raw/research_google_blog_introducing-nested-learning-a-new-ml-paradigm-for-continual.md` -- official Google Research blog post
-- `raw/arxiviq_substack_com_p_nested-learning-the-illusion-of-deep.md` -- detailed ArXivIQ analysis
-- `raw/itcanthink_substack_com_p_paper-notes-nested-learning.md` -- Chris Paxton's accessible explanation
-- `raw/www_marktechpost_com_2025_11_08_nested-learning-a-new-machine-learning-approach-.md` -- MarkTechPost technical summary
-- `raw/research-notes.md` -- personal research notes on the paradigm
+- `raw/arxiv_2512_24695.md` — the foundational NL paper (Behrouz et al., NeurIPS 2025)
+- `raw/research_google_blog_introducing-nested-learning-a-new-ml-paradigm-for-continual.md` — official Google Research blog post
+- `raw/arxiviq_substack_com_p_nested-learning-the-illusion-of-deep.md` — detailed ArXivIQ analysis
+- `raw/itcanthink_substack_com_p_paper-notes-nested-learning.md` — Chris Paxton's accessible explanation
+- `raw/www_marktechpost_com_2025_11_08_nested-learning-a-new-machine-learning-approach-.md` — MarkTechPost technical summary
+- `raw/research-notes.md` — personal research notes on the paradigm

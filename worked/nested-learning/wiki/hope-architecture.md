@@ -53,9 +53,14 @@ Hope was evaluated at 340M, 760M, and 1.3B parameter scales on language modeling
 - [[Self-Modifying Models]] -- Hope exemplifies the self-modification principle
 - [[Catastrophic Forgetting and Continual Learning]] -- the problem Hope is designed to solve
 
+## External Links
+
+- [Nested Learning paper (arXiv:2512.24695)](https://arxiv.org/abs/2512.24695) — introduces Hope
+- [Google Research Blog](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/) — Hope benchmarks and overview
+
 ## Sources
 
-- `raw/arxiv_2512_24695.md` -- original paper defining Hope
+- `raw/arxiv_2512_24695.md` — original paper defining Hope
 - `raw/arxiviq_substack_com_p_nested-learning-the-illusion-of-deep.md` -- detailed analysis of Hope's design
 - `raw/itcanthink_substack_com_p_paper-notes-nested-learning.md` -- accessible explanation of the HOPE architecture
 - `raw/www_marktechpost_com_2025_11_08_nested-learning-a-new-machine-learning-approach-.md` -- benchmark results

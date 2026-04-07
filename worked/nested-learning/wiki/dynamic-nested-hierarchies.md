@@ -45,6 +45,10 @@ The paper provides rigorous mathematical foundations including proofs of converg
 - [[Catastrophic Forgetting and Continual Learning]] -- DNH targets lifelong learning
 - [[Self-Modifying Models]] -- DNH is an extreme form of self-modification
 
+## External Links
+
+- [Dynamic Nested Hierarchies (arXiv:2511.14823)](https://arxiv.org/abs/2511.14823) — full paper
+
 ## Sources
 
-- `raw/arxiv_2511_14823.md` -- the original DNH paper by Anbar Jafari et al.
+- `raw/arxiv_2511_14823.md` — the original DNH paper by Anbar Jafari et al.
