@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oh-my-wiki"
+version = "0.1.0"
+description = "LLM-powered personal wiki compiler — raw data in, structured knowledge base out"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["wiki", "knowledge-base", "llm", "obsidian", "personal-wiki", "claude", "claude-code"]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf", "html2text"]
+watch = ["watchdog"]
+all = ["pypdf", "html2text", "watchdog"]
+
+[project.scripts]
+omw = "oh_my_wiki.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/andykhan/oh-my-wiki"
+Repository = "https://github.com/andykhan/oh-my-wiki"
+Issues = "https://github.com/andykhan/oh-my-wiki/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["oh_my_wiki*"]
+
+[tool.setuptools.package-data]
+oh_my_wiki = ["skill.md", "skill-codex.md", "skill-opencode.md", "skill-claw.md"]
