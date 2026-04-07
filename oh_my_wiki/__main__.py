@@ -253,6 +253,22 @@ def _cmd_lint(args: list[str]) -> None:
     print(f"\n{len(articles)} articles: {errors} errors, {warnings} warnings")
 
 
+def _cmd_report(args: list[str]) -> None:
+    """Generate and display WIKI_REPORT.md."""
+    wiki_dir = Path("wiki")
+    raw_dir = Path("raw")
+    if not wiki_dir.exists():
+        print("No wiki/ directory found.", file=sys.stderr)
+        sys.exit(1)
+
+    from oh_my_wiki.analyze import generate_report, save_report
+
+    report = generate_report(wiki_dir, raw_dir if raw_dir.exists() else None)
+    path = save_report(wiki_dir, raw_dir if raw_dir.exists() else None)
+    print(report)
+    print(f"\nSaved to {path}")
+
+
 def _print_help() -> None:
     print("oh-my-wiki — LLM-powered personal wiki compiler")
     print()
@@ -262,8 +278,10 @@ def _print_help() -> None:
     print("  init [directory]         Initialize a new wiki workspace")
     print("  ingest <source>          Add a source to raw/ (URL, file, or - for stdin)")
     print("  compile [--full]         Compile/update wiki from raw/")
+    print("  query \"<question>\"       Ask a question against the wiki")
     print("  status                   Show wiki stats")
     print("  lint                     Run health checks")
+    print("  report                   Generate WIKI_REPORT.md")
     print("  help                     Show this help")
     print()
     print("Examples:")
@@ -289,6 +307,7 @@ def main() -> None:
         "compile": _cmd_compile,
         "status": _cmd_status,
         "lint": _cmd_lint,
+        "report": _cmd_report,
     }
 
     handler = commands.get(cmd)
