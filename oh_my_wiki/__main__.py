@@ -253,6 +253,56 @@ def _cmd_lint(args: list[str]) -> None:
     print(f"\n{len(articles)} articles: {errors} errors, {warnings} warnings")
 
 
+def _cmd_watch(args: list[str]) -> None:
+    """Watch raw/ for changes."""
+    from oh_my_wiki.watch import watch
+    debounce = 3.0
+    for i, arg in enumerate(args):
+        if arg == "--debounce" and i + 1 < len(args):
+            debounce = float(args[i + 1])
+    watch(Path("."), debounce=debounce)
+
+
+def _cmd_install(args: list[str]) -> None:
+    """Install oh-my-wiki as a skill."""
+    from oh_my_wiki.install import (
+        install, claude_install, claude_uninstall,
+        agents_install, agents_uninstall,
+    )
+
+    if not args:
+        install()
+        return
+
+    # omw install --platform codex
+    if args[0] == "--platform" and len(args) > 1:
+        install(platform=args[1])
+        return
+
+    # omw claude install / omw claude uninstall
+    platform = args[0]
+    subcmd = args[1] if len(args) > 1 else ""
+
+    if platform == "claude":
+        if subcmd == "install":
+            claude_install()
+        elif subcmd == "uninstall":
+            claude_uninstall()
+        else:
+            print("Usage: omw claude [install|uninstall]", file=sys.stderr)
+            sys.exit(2)
+    elif platform in ("codex", "opencode", "claw"):
+        if subcmd == "install":
+            agents_install(Path("."), platform)
+        elif subcmd == "uninstall":
+            agents_uninstall(Path("."))
+        else:
+            print(f"Usage: omw {platform} [install|uninstall]", file=sys.stderr)
+            sys.exit(2)
+    else:
+        install(platform=platform)
+
+
 def _cmd_report(args: list[str]) -> None:
     """Generate and display WIKI_REPORT.md."""
     wiki_dir = Path("wiki")
@@ -282,6 +332,9 @@ def _print_help() -> None:
     print("  status                   Show wiki stats")
     print("  lint                     Run health checks")
     print("  report                   Generate WIKI_REPORT.md")
+    print("  watch                    Watch raw/ for changes")
+    print("  install [--platform P]   Install as AI assistant skill")
+    print("  claude install           Write CLAUDE.md + PreToolUse hook")
     print("  help                     Show this help")
     print()
     print("Examples:")
@@ -308,6 +361,12 @@ def main() -> None:
         "status": _cmd_status,
         "lint": _cmd_lint,
         "report": _cmd_report,
+        "watch": _cmd_watch,
+        "install": _cmd_install,
+        "claude": _cmd_install,
+        "codex": _cmd_install,
+        "opencode": _cmd_install,
+        "claw": _cmd_install,
     }
 
     handler = commands.get(cmd)
